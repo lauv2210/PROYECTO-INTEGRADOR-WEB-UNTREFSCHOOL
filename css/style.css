@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Belanosima&family=Poppins&display=swap");
+
+body {
+  margin: 0;
+}
+
+/* Paleta de colores: #FC7300 , #1F8A70 , #00425A , #181823, #EFF5F5 */
+/* font-family: 'Belanosima', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+/* POSICIONAMIENTO */
+
+#nav-bar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header {
+  position: relative;
+}
+
+header > h1 {
+  position: absolute;
+  top: 20%;
+  left: 35%;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+}
+
+.item-1,
+.item-2 {
+  width: 50%;
+  padding: 0.5em;
+}
+
+.items-3 {
+  justify-content: space-around;
+}
+
+.item-3 {
+  width: 200px;
+}
+
+#Contacto > div {
+  display: flex;
+}
+
+#Contacto > div > div {
+  padding: 0.5em;
+  width: 33%;
+}
+
+a > img {
+  height: 100px;
+}
+
+.contacto-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.contacto-1 > iframe {
+  width: 100%;
+}
+
+label,
+input {
+  display: block;
+}
+
+/* VISUAL + TIPOGRAFÍA */
+
+section {
+  padding: 2em;
+}
+
+#header-img {
+  width: 100%;
+}
+
+h1 {
+  font-family: "Belanosima", sans-serif;
+  font-size: 4em;
+  background-color: palevioletred;
+  padding: 0.5em;
+  color: white;
+}
+
+#nav-bar {
+  background-color: #fc7300;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.nav-link {
+  background-color: #1f8a70;
+  padding: 0.5em;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+h2 {
+  margin-top: 2em;
+  font-family: "Poppins", sans-serif;
+  font-size: 2em;
+}
+
+h3 {
+  margin-top: 0;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.75em;
+}
+
+p {
+  font-family: Arial, sans-serif;
+  font-size: 1.5em;
+}
+
+figcaption {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#Contacto {
+  background-color: #75b09c;
+  padding: 2em;
+}
+
+#Contacto > div {
+  margin-top: 4em;
+}
+
+a > img:hover {
+  height: 150px;
+}
+
+.contacto-1 > div {
+  font-family: Arial, sans-serif;
+  padding: 0.5em;
+}
+
+#Contacto a:link,
+#Contacto a:visited {
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  color: purple;
+}
+
+#Contacto a:hover {
+  color: red;
+}
+
+small {
+  display: block;
+  text-align: center;
+  padding-top: 2em;
+}
+
+.volver:link,
+.volver:visited {
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  color: purple;
+}
+
+.volver:hover {
+  color: red;
+}
+
+.top-color {
+  width: 100%;
+  height: 84px;
+  background-color: #fc7300;
+}
+
+.bottom-color {
+  width: 100%;
+  height: 84px;
+  background-color: #75b09c;
+}
+
+#form-main {
+  padding: 1em 2em 2em 2em;
+}
+
+label {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-family: Arial, sans-serif;
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+input[type="text"],
+input[type="email"] {
+  font-family: monospace;
+  font-size: 1.25em;
+  width: 50%;
+}
+
+textarea {
+  margin-top: 1.25em;
+  font-size: 1.25em;
+  width: 50%;
+  resize: none;
+}
+
+input[type="submit"] {
+  margin-top: 1em;
+  font-size: 1.25em;
+  padding: 0.5em;
+  background-color: #1f8a70;
+  color: white;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  background-color: palevioletred;
+  color: black;
+  font-weight: 700;
+}
+
+input[type="submit"]:hover {
+  background-color: black;
+  text-decoration: underline;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1240px) {
+  .items-3 {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  header > h1 {
+    font-size: 3em;
+    top: 30%;
+    left: 30%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #nav-bar {
+    position: static;
+    flex-direction: column;
+  }
+
+  .nav-link {
+    margin: 0.2em;
+  }
+
+  header > h1 {
+    font-size: 2em;
+    top: 30%;
+    left: 30%;
+  }
+
+  .items {
+    flex-direction: column;
+  }
+
+  .item-1,
+  .item-2 {
+    width: 100%;
+  }
+
+  #Contacto > div {
+    flex-direction: column;
+  }
+
+  #Contacto > div > div {
+    padding: 0.5em;
+    width: 100%;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+  }
+}

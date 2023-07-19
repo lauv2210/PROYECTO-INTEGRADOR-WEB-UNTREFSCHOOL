@@ -2,47 +2,53 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"
+    />
     <link rel="icon" href="icons/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Contacto</title>
   </head>
   <body>
-    <div><img src="img/colors.jpg" alt="Colores" /></div>
-    <a href="index.html">Volver</a>
-    <h2>Contáctenos</h2>
-    <p>
-      Realice su consulta que, a la brevedad, nos pondremos en contacto con
-      usted para responderle.
-    </p>
-    <form action="" method="post">
-      <label for="nombre">Nombre:</label>
-      <input
-        type="text"
-        name="nombre"
-        id="nombre"
-        placeholder="Maria Martinez"
-        maxlength="35"
-        minlength="4"
-        required
-      />
-      <label for="mail">Email:</label>
-      <input
-        type="email"
-        name="mail"
-        id="mail"
-        placeholder="mariam@mail.com"
-        required
-      />
-      <textarea
-        name="mensaje"
-        id="mensaje"
-        cols="30"
-        rows="10"
-        maxlength="500"
-        placeholder="Escriba su mensaje aquí (máximo 500 caracteres)"
-      ></textarea>
-      <input type="submit" value="ENVIAR" />
-    </form>
-    <div><img src="img/colors.jpg" alt="Colores" /></div>
+    <div class="top-color"></div>
+    <main id="form-main">
+      <a class="volver" href="index.html">Volver</a>
+      <h2>Contáctenos</h2>
+      <p>
+        Realice su consulta que, a la brevedad, nos pondremos en contacto con
+        usted para responderle.
+      </p>
+      <form action="" method="post">
+        <label for="nombre">Nombre:</label>
+        <input
+          type="text"
+          name="nombre"
+          id="nombre"
+          placeholder="Maria Martinez"
+          maxlength="35"
+          minlength="4"
+          required
+        />
+        <label for="mail">Email:</label>
+        <input
+          type="email"
+          name="mail"
+          id="mail"
+          placeholder="mariam@mail.com"
+          required
+        />
+        <textarea
+          name="mensaje"
+          id="mensaje"
+          cols="30"
+          rows="10"
+          maxlength="500"
+          placeholder="Escriba su mensaje aquí (máximo 500 caracteres)"
+        ></textarea>
+        <input type="submit" value="ENVIAR" />
+      </form>
+    </main>
+    <div class="bottom-color"></div>
   </body>
 </html>
